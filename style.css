@@ -90,6 +90,12 @@ main {
     letter-spacing: 0.68px;
 }
 
+.header__form {
+    display: flex;
+    width: 410px;
+}
+
+
 
 
 .browse {
@@ -777,6 +783,12 @@ main {
     background-color: #e1e1e1;
 }
 
+.subscribe__input:focus {
+    outline: 0;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    
+}
+
 .subscribe__input::-webkit-input-placeholder {
     padding-left: 28px;
     opacity: 0.67;
@@ -801,6 +813,10 @@ main {
 
 .subscribe__button:hover {
     opacity: 0.7;
+}
+
+.subscribe__button:focus {
+    outline: 0;
 }
 
 .footer {
