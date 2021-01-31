@@ -1,0 +1,30 @@
+.breadcrumb {
+    display: flex;
+    background-color: #f8f3f4;
+    height: 148px;
+    align-items: center;
+    width: 1600px;
+}
+
+.breadcrumb__title {
+    color: #f16d7f;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-right: 770px;
+    margin-left: auto;
+}
+
+.breadcrumb__path {
+    font-size: 14px;
+    font-weight: 300;
+    color: #636363;
+    text-transform: uppercase;
+    margin-right: auto;
+}
+
+
+.breadcrumb__path span {
+    color: #f16d7f;
+    font-weight: 700;
+}
