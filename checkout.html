@@ -17,7 +17,7 @@
         <header class="header">
             <div class="container__header">
                 <div class="header__left">
-                    <a href="#" class="logo"><img class="logo__img" src="./images/logo_1.png" alt="logo">
+                    <a href="./index.html" class="logo"><img class="logo__img" src="./images/logo_1.png" alt="logo">
                         <p class="logo__text">BRAN<span class="logo__d">D</span></p>
                     </a>
                     <form action="#" class="header__form">
@@ -178,9 +178,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <a class="mega__img" href="#">
+                        <div class="mega__img">
                             <h3 class="mega-img__title">Super sale!</h3>
-                        </a>
+                        </div>
                     </div>
                 </li>
                 <li class="menu__list"><a href="#" class="menu__link">MAN</a>
@@ -233,9 +233,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <a class="mega__img" href="#">
+                        <div class="mega__img">
                             <h3 class="mega-img__title">Super sale!</h3>
-                        </a>
+                        </div>
                     </div>
                 </li>
                 <li class="menu__list"><a href="#" class="menu__link">WOMEN</a>
@@ -288,9 +288,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <a class="mega__img" href="#">
+                        <div class="mega__img">
                             <h3 class="mega-img__title">Super sale!</h3>
-                        </a>
+                        </div>
                     </div>
                 </li>
                 <li class="menu__list"><a href="#" class="menu__link">KIDS</a>
@@ -343,9 +343,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <a class="mega__img" href="#">
+                        <div class="mega__img">
                             <h3 class="mega-img__title">Super sale!</h3>
-                        </a>
+                        </div>
                     </div>
                 </li>
                 <li class="menu__list"><a href="#" class="menu__link">Accoseriese</a>
@@ -398,9 +398,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <a class="mega__img" href="#">
+                        <div class="mega__img">
                             <h3 class="mega-img__title">Super sale!</h3>
-                        </a>
+                        </div>
                     </div>
                 </li>
                 <li class="menu__list"><a href="#" class="menu__link">Featured</a>
@@ -453,9 +453,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <a class="mega__img" href="#">
+                        <div class="mega__img">
                             <h3 class="mega-img__title">Super sale!</h3>
-                        </a>
+                        </div>
                     </div>
                 </li>
                 <li class="menu__list"><a href="#" class="menu__link">Hot Deals</a>
@@ -508,196 +508,73 @@
                                 </ul>
                             </div>
                         </div>
-                        <a class="mega__img" href="#">
+                        <div class="mega__img">
                             <h3 class="mega-img__title">Super sale!</h3>
-                        </a>
+                        </div>
                     </div>
                 </li>
             </nav>
         </header>
 
         <main>
-            <section class="slider">
-                <div class="slider__img">
-                    <div class="rectangle"></div>
-                    <h1 class="slider__title">THE&nbsp;BRAND
-                        <span class="slider__subtitle">OF&nbsp;<wbr>LUXERIOUS </span>
-                            <span class="slider__subtitle_red">&nbsp;FASHION</span>
-                    </h1>
-                </div>
+            <section class="breadcrumb">
+                <h2 class="breadcrumb__title">New Arrivals</h2>
+                <p class="breadcrumb__path"><a class="breadcrumb__path-link" href="#">Home</a>/
+                    <a class="breadcrumb__path-link" href="#">Men</a>/<a class="breadcrumb__path-link breadcrumb__path-link_active" href="#">New
+                        Arrivals</a>
+                </p>
             </section>
 
-            <section class="category">
-                <div class="category__left">
-                    <a href="#">
-                        <div class="category__men">
-                            <div class="category__men-badge">
-                                <h2 class="category__title">HOT&nbsp;DEAL<wbr><span>FOR&nbsp;MEN</span></h2>
+            <section class="checkout">
+                <div class="checkout__item">
+                    <h2 class="checkout__title checkout__title_opened">01. Shipping Adress</h2>
+                    <form class="adress-form" action="#">
+                        <fieldset class="fieldset-reg">
+                            <h4 class="fieldset-reg__title">Check as a guest or register</h4>
+                            <p class="fieldset-reg__subtitle">Register with us for future convenience</p>
+                            <p class="fieldset-reg__radio-text"><input class="fieldset-reg__radio-button" type="radio"
+                                    name="checkout" value="guest">checkout as guest</p>
+                            <p class="fieldset-reg__radio-text fieldset-reg__radio-text_last"><input
+                                    class="fieldset-reg__radio-button" type="radio" name="checkout"
+                                    value="register">register</p>
+                            <h4 class="fieldset-reg__title">register and save time!</h4>
+                            <p class="fieldset-reg__text fieldset-reg__text_position_first">Register with us for future
+                                convenience</p>
+                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Fast and easy checkout</p>
+                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Easy access to your order history and status</p>
+                            <button class="fieldset-reg__button">Continue</button>
+                        </fieldset>
+                        <fieldset class="fieldset-login">
+                            <h4 class="fieldset-login__title">Already registed?</h4>
+                            <p class="fieldset-login__subtitle">Please log in below</p>
+                            <p class="fieldset-login__input-title">EMAIL ADDRESS<span>*</span></p>
+                            <input class="fieldset-login__input" type="email" required>
+                            <p class="fieldset-login__input-title">PASSWORD<span>*</span></p>
+                            <input class="fieldset-login__input" type="password" required>
+                            <p class="fieldset-login__req-text"><span>*</span>Required Fileds</p>
+                            <div class="fieldset-login__button-box">
+                                <button class="fieldset-login__button" type="submit">Log in</button>
+                                <a class="fieldset-login__pas-link" href="#">
+                                    <p class="fieldset-login__pas-text">Forgot Password ?</p>
+                                </a>
                             </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="category__envelope">
-                            <img class="category__img" src="./images/envelop.jpg" alt="envelope">
-                            <div class="category__envelope-badge">
-                                <h2 class="category__title">LUXIROUS&nbsp;&&nbsp;trendy<span>ACCESORIES</span> </h2>
-                            </div>
-                        </div>
-                    </a>
+                        </fieldset>
+                    </form>
                 </div>
-                <div class="category__right">
-                    <a href="#" class="">
-                        <div class="category__women">
-                            <div class="category__women-badge">
-                                <h2 class="category__title">30%&nbsp;offer<span>women</span></h2>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="category__kids">
-                            <div class="category__kids-badge">
-                                <h2 class="category__title">new&nbsp;arrivals<span>FOR&nbsp;kids</span></h2>
-                            </div>
-                        </div>
-                    </a>
+                <div class="checkout__item">
+                    <h2 class="checkout__title">02. BILLING INFORMATION</h2>
                 </div>
-            </section>
-
-            <section class="product">
-                <h3 class="product__title">Fetured Items</h3>
-                <p class="product__subtitle">Shop for items based on what we featured in this week</p>
-                <div class="products">
-                    <div class="products__item">
-                        <a href="#" class="products__link">
-                            <img class="products__img" src="./images/Layer_2.jpg" alt="T-Shirt">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="cover">
-                            <a href="#" class="cover__add">
-                                <img class="cover__img" src="./images/banch_white.svg" alt="basket">
-                                <p class="add__title">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <a href="#" class="products__link">
-                            <img class="products__img" src="./images/Layer_3.jpg" alt="T-Shirt">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="cover">
-                            <a href="#" class="cover__add">
-                                <img class="cover__img" src="./images/banch_white.svg" alt="basket">
-                                <p class="add__title">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <a href="#" class="products__link">
-                            <img class="products__img" src="./images/Layer_4.jpg" alt="T-Shirt">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="cover">
-                            <a href="#" class="cover__add">
-                                <img class="cover__img" src="./images/banch_white.svg" alt="basket">
-                                <p class="add__title">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <a href="#" class="products__link">
-                            <img class="products__img" src="./images/Layer_5.jpg" alt="T-Shirt">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="cover">
-                            <a href="#" class="cover__add">
-                                <img class="cover__img" src="./images/banch_white.svg" alt="basket">
-                                <p class="add__title">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <a href="#" class="products__link">
-                            <img class="products__img" src="./images/Layer_6.jpg" alt="T-Shirt">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="cover">
-                            <a href="#" class="cover__add">
-                                <img class="cover__img" src="./images/banch_white.svg" alt="basket">
-                                <p class="add__title">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <a href="#" class="products__link">
-                            <img class="products__img" src="./images/Layer_7.jpg" alt="T-Shirt">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="cover">
-                            <a href="#" class="cover__add">
-                                <img class="cover__img" src="./images/banch_white.svg" alt="basket">
-                                <p class="add__title">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <a href="#" class="products__link">
-                            <img class="products__img" src="./images/Layer_8.jpg" alt="T-Shirt">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="cover">
-                            <a href="#" class="cover__add">
-                                <img class="cover__img" src="./images/banch_white.svg" alt="basket">
-                                <p class="add__title">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <a href="#" class="products__link">
-                            <img class="products__img" src="./images/Layer_9.jpg" alt="T-Shirt">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="cover">
-                            <a href="#" class="cover__add">
-                                <img class="cover__img" src="./images/banch_white.svg" alt="basket">
-                                <p class="add__title">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
+                <div class="checkout__item">
+                    <h2 class="checkout__title">03. SHIPPING INFORMATION</h2>
                 </div>
-                <button class="product__browse">Browse All Product<span><i
-                            class="fas fa-long-arrow-alt-right"></i></span></button>
-            </section>
-
-            <section class="feature">
-                <div class="feature__left">
-                    <h3 class="feature__offer">30%<span class="offer__offer">OFFER</span>
-                        <span class="offer__woman">FOR&nbsp;WOMEN</span>
-                    </h3>
+                <div class="checkout__item">
+                    <h2 class="checkout__title">04. SHIPPING METHOD</h2>
                 </div>
-                <div class="feature__right">
-                    <div class="feature__box lorry-pic">
-                        <h3 class="box__title">Free Delivery</h3>
-                        <p class="box__subtitle">Worldwide delivery on all. Authorit tively morph next-generation
-                            innov tion with extensive models.</p>
-                    </div>
-                    <div class="feature__box discount-pic">
-                        <h3 class="box__title">Sales & discounts</h3>
-                        <p class="box__subtitle">Worldwide delivery on all. Authorit tively morph next-generation
-                            innov tion with extensive models.</p>
-                    </div>
-                    <div class="feature__box crown-pic">
-                        <h3 class="box__title">Quality assurance</h3>
-                        <p class="box__subtitle">Worldwide delivery on all. Authorit tively morph next-generation
-                            innov tion with extensive models.</p>
-                    </div>
+                <div class="checkout__item">
+                    <h2 class="checkout__title">05. PAYMENT METHOD</h2>
+                </div>
+                <div class="checkout__item">
+                    <h2 class="checkout__title">06. ORDER REVIEW</h2>
                 </div>
             </section>
 

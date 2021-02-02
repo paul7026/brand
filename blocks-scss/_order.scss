@@ -164,6 +164,7 @@
     cursor: pointer;
     outline: 0;
     border: 0;
+    @include transition-prop;
 }
 
 .order__checkout-button:hover {

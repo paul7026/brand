@@ -18,13 +18,22 @@
 .breadcrumb__path {
     font-size: 14px;
     font-weight: 300;
-    color: #636363;
     text-transform: uppercase;
     margin-right: auto;
 }
 
 
-.breadcrumb__path span {
-    color: #f16d7f;
-    font-weight: 700;
+.breadcrumb__path-link {
+    text-decoration: none;
+    font-weight: 300;
+    color: #636363;
+    @include transition-prop;
+    &_active {
+        color: #f16d7f;
+        font-weight: 700;
+    }
+
+    &:hover {
+        color: #f16d7f;
+    }
 }

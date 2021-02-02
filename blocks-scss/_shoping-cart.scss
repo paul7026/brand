@@ -146,6 +146,7 @@ $shoppinCartWidth: 1140px;
     cursor: pointer;
     padding-left: 39px;
     padding-right: 39px;
+    @include transition-prop;
 }
 
 .shopping-cart__button:hover {

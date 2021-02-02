@@ -104,6 +104,7 @@
     background-color: #ffffff;
     padding-left: 16px;
     box-sizing: border-box;
+    outline: 0;
 }
 
 .header__input::-webkit-input-placeholder {
@@ -125,6 +126,7 @@
     border: 1px solid #e6e6e6;
     cursor: pointer;
     box-sizing: border-box;
+    @include transition-prop;
 }
 
 .header__submit:hover {
@@ -136,6 +138,7 @@
     height: 29px;
     margin-right: 26px;
     position: relative;
+    @include transition-prop;
 }
 
 .basket__link:hover .basket {
@@ -145,4 +148,5 @@
 .basket {
     width: 32px;
     height: 29px;
+    
 }
