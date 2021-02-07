@@ -1695,6 +1695,13 @@ main {
           align-items: center;
   -webkit-filter: opacity(30%);
           filter: opacity(30%);
+  cursor: pointer;
+  outline: 0;
+}
+
+.image-slider__slider:hover {
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
 }
 
 .image-slider__pic {

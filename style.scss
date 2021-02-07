@@ -749,6 +749,12 @@ main {
     justify-content: center;
     align-items: center;
     filter: opacity(30%);
+    cursor: pointer;
+    outline: 0;
+
+    &:hover {
+        filter: opacity(50%);
+    }
 }
 
 .image-slider__pic {
