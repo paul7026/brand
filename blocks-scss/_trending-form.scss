@@ -1,0 +1,33 @@
+.trending-form {
+    max-width: 176px;
+    margin-right: 114px;
+}
+
+.trending-form__title {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.trending-form__items {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trending-form__item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.trending-form__item-link {
+    display: block;
+    color: #6f6e6e;
+
+    span {
+        color: #dfdfdf;
+    }
+}

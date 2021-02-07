@@ -1,0 +1,20 @@
+.price-form {
+   display: flex;
+   flex-direction: column;
+    
+}
+
+.price-form__legend {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.price-form__input {
+    width: 262px;
+    height: 6px;
+
+}
