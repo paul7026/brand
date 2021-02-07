@@ -1,4 +1,5 @@
 $siteWidth: 1600px;
+$fontSizeDef: 16;
 
 @mixin transition-prop {
     transition: all ease-out 0.3s;
@@ -13,6 +14,7 @@ $siteWidth: 1600px;
 body {
     font-family: 'Lato', sans-serif;
     line-height: 1;
+    font-size: 100%; // это 16px в большинстве браузеров
 }
 
 a {
@@ -81,7 +83,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin-top: 216px;
-    font-size: 60px;
+    font-size: 60em / $fontSizeDef;
     letter-spacing: 1.5px;
     font-weight: 900;
     margin-left: 19px;
@@ -89,12 +91,12 @@ main {
 
 .slider__subtitle {
     letter-spacing: 1px;
-    font-size: 40px;
+    font-size: (40em / 60);
 }
 
 .slider__subtitle_red {
     color: #f16d7f;
-    font-size: 40px;
+    font-size: (40em / 60);
     letter-spacing: 1px;
 }
 
@@ -139,7 +141,7 @@ main {
 
 .category__title {
     color: #222222;
-    font-size: 18px;
+    font-size: (18em /16);
     font-weight: 900;
     letter-spacing: 0.45px;
     text-transform: uppercase;
@@ -152,7 +154,7 @@ main {
 
 .category__title span {
     color: red;
-    font-size: 30px;
+    font-size: (30em / 18);
     letter-spacing: 0.75px;
     color: #f16d7f;
     margin-top: 5px;
@@ -160,7 +162,7 @@ main {
 }
 
 .category__subtitle {
-    font-size: 30px;
+    font-size: (30em / 18);
     letter-spacing: 0.75px;
     color: #f16d7f;
     font-weight: 900;
@@ -259,7 +261,7 @@ main {
 
 .product__title {
     color: #222222;
-    font-size: 30px;
+    font-size: (30em / 16);
     font-weight: 700;
     margin-top: -4px;
     margin-bottom: 11px;
@@ -268,7 +270,7 @@ main {
 
 .product__subtitle {
     color: #9f9f9f;
-    font-size: 14px;
+    font-size: (14em / 16);
     font-weight: 400;
     letter-spacing: 0.35px;
     margin-top: 0;
@@ -282,7 +284,7 @@ main {
 .product__browse {
     box-sizing: border-box;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
     width: 212px;
     height: 48px;
@@ -343,7 +345,7 @@ main {
     margin-top: 138px;
     margin-left: 37px;
     color: #ffffff;
-    font-size: 54px;
+    font-size: (54em /16);
     font-weight: 700;
     text-align: left;
     text-transform: uppercase;
@@ -351,13 +353,10 @@ main {
 
 .offer__offer {
     color: #f16d7f;
-    font-size: 54px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
 }
 
 .offer__woman {
-    font-size: 32px;
+    font-size: (32em / 54);
     letter-spacing: 0.9px;
     font-weight: 700;
     color: #ffffff;
@@ -388,7 +387,7 @@ main {
 
 .box__title {
     color: #fbfbfb;
-    font-size: 20px;
+    font-size: (20em /16);
     font-weight: 700;
     margin: 7px auto 14px 78px;
     letter-spacing: 0.5px;
@@ -396,7 +395,7 @@ main {
 
 .box__subtitle {
     color: #fbfbfb;
-    font-size: 14px;
+    font-size: (14em / 16);
     font-weight: 300;
     line-height: 1.7;
     text-align: left;
@@ -448,7 +447,7 @@ main {
 
 .review__text {
     color: #222224;
-    font-size: 16px;
+    font-size: 1em;
     font-style: italic;
     line-height: 1.63;
     text-align: left;
@@ -461,7 +460,7 @@ main {
 
 .review__author {
     color: #f16d7f;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
     margin: 0 0 0 342px;
     letter-spacing: 0.4px;
@@ -470,7 +469,7 @@ main {
 
 .review__author-full {
     color: #222224;
-    font-size: 12px;
+    font-size: (12em /16);
     font-weight: 300;
     letter-spacing: 0.3px;
     margin: 4px 0 0 342px;
@@ -520,13 +519,13 @@ main {
     letter-spacing: 0.6px;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 24px;
+    font-size: (24em / 16);
     text-align: center;
     margin-bottom: 9px;
 }
 
 .subscribe__subtitle {
-    font-size: 14px;
+    font-size: (14em / 16);
     letter-spacing: 0.35px;
 }
 
@@ -553,8 +552,8 @@ main {
 .subscribe__input::-webkit-input-placeholder {
     opacity: 0.67;
     color: #222224;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 1em;
 }
 
 .subscribe__button {
@@ -565,7 +564,7 @@ main {
     background-color: #f16d7f;
     letter-spacing: 0.35px;
     text-align: center;
-    font-size: 14px;
+    font-size: (14em /16);
     font-weight: 400;
     color: #ffffff;
     cursor: pointer;
@@ -607,7 +606,7 @@ main {
 .text {
     width: 427px;
     color: #898989;
-    font-size: 14px;
+    font-size: (14em /16);
     line-height: 24px;
     display: flex;
     flex-direction: column;
@@ -632,7 +631,7 @@ main {
 
 .company-group__title {
     color: #f16d7f;
-    font-size: 18px;
+    font-size: (18em /16);
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 10px;
@@ -649,7 +648,7 @@ main {
 .footer__list {
     list-style-type: none;
     color: #898989;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
     line-height: 42px;
     text-decoration: none;
@@ -688,7 +687,7 @@ main {
 .copy {
     margin: 0 690px 0 228px;
     color: #7a7a7a;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
     letter-spacing: 0.6px;
 
@@ -709,7 +708,7 @@ main {
     justify-content: center;
     align-items: center;
     color: #b2b2b2;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
     @include transition-prop;
 }

@@ -6,6 +6,7 @@
 body {
   font-family: 'Lato', sans-serif;
   line-height: 1;
+  font-size: 100%;
 }
 
 a {
@@ -104,7 +105,7 @@ main {
   height: 19px;
   color: #222222;
   letter-spacing: 0.68px;
-  font-size: 27px;
+  font-size: 1.6875em;
   font-weight: 300;
 }
 
@@ -131,7 +132,7 @@ main {
   padding: 0;
   border: 0;
   color: #222222;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 300;
   text-align: left;
   border-radius: 3px 0 0 3px;
@@ -162,7 +163,7 @@ main {
 
 .header__input::-webkit-input-placeholder {
   color: #a4a4a4;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 300;
 }
 
@@ -387,7 +388,7 @@ main {
   border-radius: 3px;
   background-position: 109px;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 0.9375em;
   font-weight: 400;
   text-align: left;
   text-indent: 19px;
@@ -402,7 +403,7 @@ main {
 }
 
 .myaccount span {
-  font-size: 14px;
+  font-size: 0.93333em;
   font-weight: 400;
   margin-left: 8px;
 }
@@ -437,9 +438,8 @@ main {
 
 .menu__list {
   list-style-type: none;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 700;
-  color: #222222;
 }
 
 .menu__link {
@@ -447,8 +447,6 @@ main {
   height: 100%;
   text-decoration: none;
   color: #222222;
-  font-size: 14px;
-  font-weight: 700;
   text-transform: uppercase;
   position: relative;
   -webkit-transition: all ease-out 0.3s;
@@ -632,7 +630,7 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 216px;
-  font-size: 60px;
+  font-size: 3.75em;
   letter-spacing: 1.5px;
   font-weight: 900;
   margin-left: 19px;
@@ -640,12 +638,12 @@ main {
 
 .slider__subtitle {
   letter-spacing: 1px;
-  font-size: 40px;
+  font-size: 0.66667em;
 }
 
 .slider__subtitle_red {
   color: #f16d7f;
-  font-size: 40px;
+  font-size: 0.66667em;
   letter-spacing: 1px;
 }
 
@@ -696,7 +694,7 @@ main {
 
 .category__title {
   color: #222222;
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 900;
   letter-spacing: 0.45px;
   text-transform: uppercase;
@@ -714,14 +712,14 @@ main {
 
 .category__title span {
   color: red;
-  font-size: 30px;
+  font-size: 1.66667em;
   letter-spacing: 0.75px;
   color: #f16d7f;
   margin-top: 5px;
 }
 
 .category__subtitle {
-  font-size: 30px;
+  font-size: 1.66667em;
   letter-spacing: 0.75px;
   color: #f16d7f;
   font-weight: 900;
@@ -837,7 +835,7 @@ main {
 
 .product__title {
   color: #222222;
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 700;
   margin-top: -4px;
   margin-bottom: 11px;
@@ -846,7 +844,7 @@ main {
 
 .product__subtitle {
   color: #9f9f9f;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 400;
   letter-spacing: 0.35px;
   margin-top: 0;
@@ -913,8 +911,7 @@ main {
 
 .products__name {
   color: #222222;
-  font-size: 13px;
-  font-family: Lato;
+  font-size: 0.8125em;
   margin-left: 14px;
   text-transform: uppercase;
   margin-top: 19px;
@@ -923,7 +920,7 @@ main {
 
 .products__price {
   color: #f16d7f;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 700;
   font-style: normal;
   letter-spacing: normal;
@@ -967,8 +964,6 @@ main {
   border: 1px solid #ffffff;
   padding: 8px 12px;
   color: #ffffff;
-  font-size: 13px;
-  font-weight: 700;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -987,9 +982,10 @@ main {
 
 .add__title {
   color: #ffffff;
-  font-size: 13px;
+  font-size: 0.8125em;
   margin: 5px 0 7px 8px;
   font-weight: bold;
+  font-weight: 700;
 }
 
 .cover__img {
@@ -1042,7 +1038,7 @@ main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 700;
   width: 212px;
   height: 48px;
@@ -1107,7 +1103,7 @@ main {
   margin-top: 138px;
   margin-left: 37px;
   color: #ffffff;
-  font-size: 54px;
+  font-size: 3.375em;
   font-weight: 700;
   text-align: left;
   text-transform: uppercase;
@@ -1115,13 +1111,10 @@ main {
 
 .offer__offer {
   color: #f16d7f;
-  font-size: 54px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
 }
 
 .offer__woman {
-  font-size: 32px;
+  font-size: 0.59259em;
   letter-spacing: 0.9px;
   font-weight: 700;
   color: #ffffff;
@@ -1156,7 +1149,7 @@ main {
 
 .box__title {
   color: #fbfbfb;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 700;
   margin: 7px auto 14px 78px;
   letter-spacing: 0.5px;
@@ -1164,7 +1157,7 @@ main {
 
 .box__subtitle {
   color: #fbfbfb;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 300;
   line-height: 1.7;
   text-align: left;
@@ -1218,7 +1211,7 @@ main {
 
 .review__text {
   color: #222224;
-  font-size: 16px;
+  font-size: 1em;
   font-style: italic;
   line-height: 1.63;
   text-align: left;
@@ -1231,7 +1224,7 @@ main {
 
 .review__author {
   color: #f16d7f;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 700;
   margin: 0 0 0 342px;
   letter-spacing: 0.4px;
@@ -1239,7 +1232,7 @@ main {
 
 .review__author-full {
   color: #222224;
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 300;
   letter-spacing: 0.3px;
   margin: 4px 0 0 342px;
@@ -1294,13 +1287,13 @@ main {
   letter-spacing: 0.6px;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5em;
   text-align: center;
   margin-bottom: 9px;
 }
 
 .subscribe__subtitle {
-  font-size: 14px;
+  font-size: 0.875em;
   letter-spacing: 0.35px;
 }
 
@@ -1330,8 +1323,8 @@ main {
 .subscribe__input::-webkit-input-placeholder {
   opacity: 0.67;
   color: #222224;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 1em;
 }
 
 .subscribe__button {
@@ -1342,7 +1335,7 @@ main {
   background-color: #f16d7f;
   letter-spacing: 0.35px;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 400;
   color: #ffffff;
   cursor: pointer;
@@ -1397,7 +1390,7 @@ main {
 .text {
   width: 427px;
   color: #898989;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1433,7 +1426,7 @@ main {
 
 .company-group__title {
   color: #f16d7f;
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 10px;
@@ -1454,7 +1447,7 @@ main {
 .footer__list {
   list-style-type: none;
   color: #898989;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   line-height: 42px;
   text-decoration: none;
@@ -1507,7 +1500,7 @@ main {
 .copy {
   margin: 0 690px 0 228px;
   color: #7a7a7a;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   letter-spacing: 0.6px;
 }
@@ -1535,7 +1528,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   color: #b2b2b2;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   -webkit-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s;

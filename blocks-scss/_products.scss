@@ -45,8 +45,7 @@
 
 .products__name {
     color: #222222;
-    font-size: 13px;
-    font-family: Lato;
+    font-size: (13em /16);   
     margin-left: 14px;
     text-transform: uppercase;
     margin-top: 19px;
@@ -55,7 +54,7 @@
 
 .products__price {
     color: #f16d7f;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
     font-style: normal;
     letter-spacing: normal;
