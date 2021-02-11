@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>checkout</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="normalize.css"> -->
@@ -520,14 +520,15 @@
             <section class="breadcrumb">
                 <h2 class="breadcrumb__title">New Arrivals</h2>
                 <p class="breadcrumb__path"><a class="breadcrumb__path-link" href="#">Home</a>/
-                    <a class="breadcrumb__path-link" href="#">Men</a>/<a class="breadcrumb__path-link breadcrumb__path-link_active" href="#">New
+                    <a class="breadcrumb__path-link" href="#">Men</a>/<a
+                        class="breadcrumb__path-link breadcrumb__path-link_active" href="#">New
                         Arrivals</a>
                 </p>
             </section>
 
             <section class="checkout">
-                <div class="checkout__item">
-                    <h2 class="checkout__title checkout__title_opened">01. Shipping Adress</h2>
+                <details class="checkout__item">
+                    <summary class="checkout__item__title">01. Shipping Adress</summary>
                     <form class="adress-form" action="#">
                         <fieldset class="fieldset-reg">
                             <h4 class="fieldset-reg__title">Check as a guest or register</h4>
@@ -538,10 +539,13 @@
                                     class="fieldset-reg__radio-button" type="radio" name="checkout"
                                     value="register">register</p>
                             <h4 class="fieldset-reg__title">register and save time!</h4>
-                            <p class="fieldset-reg__text fieldset-reg__text_position_first">Register with us for future
+                            <p class="fieldset-reg__text fieldset-reg__text_position_first">Register with us for
+                                future
                                 convenience</p>
-                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Fast and easy checkout</p>
-                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Easy access to your order history and status</p>
+                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Fast
+                                and easy checkout</p>
+                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Easy
+                                access to your order history and status</p>
                             <button class="fieldset-reg__button">Continue</button>
                         </fieldset>
                         <fieldset class="fieldset-login">
@@ -560,119 +564,296 @@
                             </div>
                         </fieldset>
                     </form>
-                </div>
-                <div class="checkout__item">
-                    <h2 class="checkout__title">02. BILLING INFORMATION</h2>
-                </div>
-                <div class="checkout__item">
-                    <h2 class="checkout__title">03. SHIPPING INFORMATION</h2>
-                </div>
-                <div class="checkout__item">
-                    <h2 class="checkout__title">04. SHIPPING METHOD</h2>
-                </div>
-                <div class="checkout__item">
-                    <h2 class="checkout__title">05. PAYMENT METHOD</h2>
-                </div>
-                <div class="checkout__item">
-                    <h2 class="checkout__title">06. ORDER REVIEW</h2>
-                </div>
-            </section>
-
-            <section class="subscribe">
-                <div class="subscribe__left">
-                    <div class="subscribe__profile"></div>
-                    <p class="review__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
-                        purus condimentum a. Aliquam&nbsp;condimentum mattis neque sed pretium”
-                    </p>
-                    <p class="review__author">Bin Burhan</p>
-                    <p class="review__author-full">Dhaka, Bd</p>
-                    <div class="pagination">
-                        <a href="#" class="pagination__rectangle"></a>
-                        <a href="#" class="pagination__rectangle pagination__rectangle_active"></a>
-                        <a href="#" class="pagination__rectangle"></a>
-                    </div>
-                </div>
-                <div class="subscribe__right">
-                    <div class="subscribe__group">
-                        <h4 class="subscribe__title">Subscribe</h4>
-                        <p class="subscribe__subtitle">FOR OUR NEWLETTER AND&nbsp;PROMOTION</p>
-                    </div>
-                    <form class="subscribe__form">
-                        <input type="email" class="subscribe__input" placeholder="Enter Your Email">
-                        <button class="subscribe__button" type="submit">Subscribe</button>
+                </details>
+                <details class="checkout__item">
+                    <summary class="checkout__item__title">02. BILLING INFORMATION</summary>
+                    <form class="adress-form" action="#">
+                        <fieldset class="fieldset-reg">
+                            <h4 class="fieldset-reg__title">Check as a guest or register</h4>
+                            <p class="fieldset-reg__subtitle">Register with us for future convenience</p>
+                            <p class="fieldset-reg__radio-text"><input class="fieldset-reg__radio-button" type="radio"
+                                    name="checkout" value="guest">checkout as guest</p>
+                            <p class="fieldset-reg__radio-text fieldset-reg__radio-text_last"><input
+                                    class="fieldset-reg__radio-button" type="radio" name="checkout"
+                                    value="register">register</p>
+                            <h4 class="fieldset-reg__title">register and save time!</h4>
+                            <p class="fieldset-reg__text fieldset-reg__text_position_first">Register with us for
+                                future
+                                convenience</p>
+                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Fast
+                                and easy checkout</p>
+                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Easy
+                                access to your order history and status</p>
+                            <button class="fieldset-reg__button">Continue</button>
+                        </fieldset>
+                        <fieldset class="fieldset-login">
+                            <h4 class="fieldset-login__title">Already registed?</h4>
+                            <p class="fieldset-login__subtitle">Please log in below</p>
+                            <p class="fieldset-login__input-title">EMAIL ADDRESS<span>*</span></p>
+                            <input class="fieldset-login__input" type="email" required>
+                            <p class="fieldset-login__input-title">PASSWORD<span>*</span></p>
+                            <input class="fieldset-login__input" type="password" required>
+                            <p class="fieldset-login__req-text"><span>*</span>Required Fileds</p>
+                            <div class="fieldset-login__button-box">
+                                <button class="fieldset-login__button" type="submit">Log in</button>
+                                <a class="fieldset-login__pas-link" href="#">
+                                    <p class="fieldset-login__pas-text">Forgot Password ?</p>
+                                </a>
+                            </div>
+                        </fieldset>
                     </form>
-                </div>
+                </details>
+                <details class="checkout__item">
+                    <summary class="checkout__item__title">03.  SHIPPING INFORMATION</summary>
+                    <form class="adress-form" action="#">
+                        <fieldset class="fieldset-reg">
+                            <h4 class="fieldset-reg__title">Check as a guest or register</h4>
+                            <p class="fieldset-reg__subtitle">Register with us for future convenience</p>
+                            <p class="fieldset-reg__radio-text"><input class="fieldset-reg__radio-button" type="radio"
+                                    name="checkout" value="guest">checkout as guest</p>
+                            <p class="fieldset-reg__radio-text fieldset-reg__radio-text_last"><input
+                                    class="fieldset-reg__radio-button" type="radio" name="checkout"
+                                    value="register">register</p>
+                            <h4 class="fieldset-reg__title">register and save time!</h4>
+                            <p class="fieldset-reg__text fieldset-reg__text_position_first">Register with us for
+                                future
+                                convenience</p>
+                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Fast
+                                and easy checkout</p>
+                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Easy
+                                access to your order history and status</p>
+                            <button class="fieldset-reg__button">Continue</button>
+                        </fieldset>
+                        <fieldset class="fieldset-login">
+                            <h4 class="fieldset-login__title">Already registed?</h4>
+                            <p class="fieldset-login__subtitle">Please log in below</p>
+                            <p class="fieldset-login__input-title">EMAIL ADDRESS<span>*</span></p>
+                            <input class="fieldset-login__input" type="email" required>
+                            <p class="fieldset-login__input-title">PASSWORD<span>*</span></p>
+                            <input class="fieldset-login__input" type="password" required>
+                            <p class="fieldset-login__req-text"><span>*</span>Required Fileds</p>
+                            <div class="fieldset-login__button-box">
+                                <button class="fieldset-login__button" type="submit">Log in</button>
+                                <a class="fieldset-login__pas-link" href="#">
+                                    <p class="fieldset-login__pas-text">Forgot Password ?</p>
+                                </a>
+                            </div>
+                        </fieldset>
+                    </form>
+                </details>
+                <details class="checkout__item">
+                    <summary class="checkout__item__title">04. SHIPPING METHOD</summary>
+                    <form class="adress-form" action="#">
+                        <fieldset class="fieldset-reg">
+                            <h4 class="fieldset-reg__title">Check as a guest or register</h4>
+                            <p class="fieldset-reg__subtitle">Register with us for future convenience</p>
+                            <p class="fieldset-reg__radio-text"><input class="fieldset-reg__radio-button" type="radio"
+                                    name="checkout" value="guest">checkout as guest</p>
+                            <p class="fieldset-reg__radio-text fieldset-reg__radio-text_last"><input
+                                    class="fieldset-reg__radio-button" type="radio" name="checkout"
+                                    value="register">register</p>
+                            <h4 class="fieldset-reg__title">register and save time!</h4>
+                            <p class="fieldset-reg__text fieldset-reg__text_position_first">Register with us for
+                                future
+                                convenience</p>
+                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Fast
+                                and easy checkout</p>
+                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Easy
+                                access to your order history and status</p>
+                            <button class="fieldset-reg__button">Continue</button>
+                        </fieldset>
+                        <fieldset class="fieldset-login">
+                            <h4 class="fieldset-login__title">Already registed?</h4>
+                            <p class="fieldset-login__subtitle">Please log in below</p>
+                            <p class="fieldset-login__input-title">EMAIL ADDRESS<span>*</span></p>
+                            <input class="fieldset-login__input" type="email" required>
+                            <p class="fieldset-login__input-title">PASSWORD<span>*</span></p>
+                            <input class="fieldset-login__input" type="password" required>
+                            <p class="fieldset-login__req-text"><span>*</span>Required Fileds</p>
+                            <div class="fieldset-login__button-box">
+                                <button class="fieldset-login__button" type="submit">Log in</button>
+                                <a class="fieldset-login__pas-link" href="#">
+                                    <p class="fieldset-login__pas-text">Forgot Password ?</p>
+                                </a>
+                            </div>
+                        </fieldset>
+                    </form>
+                </details>
+                <details class="checkout__item">
+                    <summary class="checkout__item__title">05. PAYMENT METHOD</summary>
+                    <form class="adress-form" action="#">
+                        <fieldset class="fieldset-reg">
+                            <h4 class="fieldset-reg__title">Check as a guest or register</h4>
+                            <p class="fieldset-reg__subtitle">Register with us for future convenience</p>
+                            <p class="fieldset-reg__radio-text"><input class="fieldset-reg__radio-button" type="radio"
+                                    name="checkout" value="guest">checkout as guest</p>
+                            <p class="fieldset-reg__radio-text fieldset-reg__radio-text_last"><input
+                                    class="fieldset-reg__radio-button" type="radio" name="checkout"
+                                    value="register">register</p>
+                            <h4 class="fieldset-reg__title">register and save time!</h4>
+                            <p class="fieldset-reg__text fieldset-reg__text_position_first">Register with us for
+                                future
+                                convenience</p>
+                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Fast
+                                and easy checkout</p>
+                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Easy
+                                access to your order history and status</p>
+                            <button class="fieldset-reg__button">Continue</button>
+                        </fieldset>
+                        <fieldset class="fieldset-login">
+                            <h4 class="fieldset-login__title">Already registed?</h4>
+                            <p class="fieldset-login__subtitle">Please log in below</p>
+                            <p class="fieldset-login__input-title">EMAIL ADDRESS<span>*</span></p>
+                            <input class="fieldset-login__input" type="email" required>
+                            <p class="fieldset-login__input-title">PASSWORD<span>*</span></p>
+                            <input class="fieldset-login__input" type="password" required>
+                            <p class="fieldset-login__req-text"><span>*</span>Required Fileds</p>
+                            <div class="fieldset-login__button-box">
+                                <button class="fieldset-login__button" type="submit">Log in</button>
+                                <a class="fieldset-login__pas-link" href="#">
+                                    <p class="fieldset-login__pas-text">Forgot Password ?</p>
+                                </a>
+                            </div>
+                        </fieldset>
+                    </form>
+                </details>
+                <details class="checkout__item">
+                    <summary class="checkout__item__title">06. ORDER REVIEW</summary>
+                    <form class="adress-form" action="#">
+                        <fieldset class="fieldset-reg">
+                            <h4 class="fieldset-reg__title">Check as a guest or register</h4>
+                            <p class="fieldset-reg__subtitle">Register with us for future convenience</p>
+                            <p class="fieldset-reg__radio-text"><input class="fieldset-reg__radio-button" type="radio"
+                                    name="checkout" value="guest">checkout as guest</p>
+                            <p class="fieldset-reg__radio-text fieldset-reg__radio-text_last"><input
+                                    class="fieldset-reg__radio-button" type="radio" name="checkout"
+                                    value="register">register</p>
+                            <h4 class="fieldset-reg__title">register and save time!</h4>
+                            <p class="fieldset-reg__text fieldset-reg__text_position_first">Register with us for
+                                future
+                                convenience</p>
+                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Fast
+                                and easy checkout</p>
+                            <p class="fieldset-reg__text"><span><i class="fas fa-angle-double-right"></i></span>Easy
+                                access to your order history and status</p>
+                            <button class="fieldset-reg__button">Continue</button>
+                        </fieldset>
+                        <fieldset class="fieldset-login">
+                            <h4 class="fieldset-login__title">Already registed?</h4>
+                            <p class="fieldset-login__subtitle">Please log in below</p>
+                            <p class="fieldset-login__input-title">EMAIL ADDRESS<span>*</span></p>
+                            <input class="fieldset-login__input" type="email" required>
+                            <p class="fieldset-login__input-title">PASSWORD<span>*</span></p>
+                            <input class="fieldset-login__input" type="password" required>
+                            <p class="fieldset-login__req-text"><span>*</span>Required Fileds</p>
+                            <div class="fieldset-login__button-box">
+                                <button class="fieldset-login__button" type="submit">Log in</button>
+                                <a class="fieldset-login__pas-link" href="#">
+                                    <p class="fieldset-login__pas-text">Forgot Password ?</p>
+                                </a>
+                            </div>
+                        </fieldset>
+                    </form>
+                </details>
             </section>
-        </main>
 
-        <footer class="footer">
-            <div class="footer__top">
-                <div class="brand-group">
-                    <a href="#" class="logo"><img class="logo__img" src="./images/logo_1.png" alt="logo">
-                        <p class="logo__text">BRAN<span class="logo__d">D</span></p>
-                    </a>
-                    <div class="text">
-                        <p class="text__top">Objectively transition extensive data rather than cross functional
-                            solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits.
-                            Intrinsicly syndicate an expanded array of&nbsp;processes and cross-unit partnerships.
-                        </p>
-                        <p class="text__bottom">Efficiently plagiarize 24/365 action items and focused infomediaries.
-                            Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
-                        </p>
-                    </div>
-                </div>
-                <div class="company-group">
-                    <h4 class="company-group__title">Company</h4>
-                    <ul class="footer__lists">
-                        <li class="footer__list"><a href="#" class="footer__list">Home</a></li>
-                        <li class="footer__list"><a href="#" class="footer__list">Shop</a></li>
-                        <li class="footer__list"><a href="#" class="footer__list">About</a></li>
-                        <li class="footer__list"><a href="#" class="footer__list">How It Works</a></li>
-                        <li class="footer__list"><a href="#" class="footer__list">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="information-group">
-                    <h4 class="company-group__title">INFORMATION</h4>
-                    <ul class="footer__lists">
-                        <li class="footer__list"><a href="#" class="footer__list">Tearms & Condition</a></li>
-                        <li class="footer__list"><a href="#" class="footer__list">Privacy Policy</a></li>
-                        <li class="footer__list"><a href="#" class="footer__list">How to Buy</a></li>
-                        <li class="footer__list"><a href="#" class="footer__list">How to Sell</a></li>
-                        <li class="footer__list"><a href="#" class="footer__list">Promotion</a></li>
-                    </ul>
-                </div>
-                <div class="shop-group">
-                    <h4 class="company-group__title">SHOP CATEGORY</h4>
-                    <ul class="footer__lists">
-                        <li class="footer__list"><a href="#" class="footer__list">Men</a></li>
-                        <li class="footer__list"><a href="#" class="footer__list">Women</a></li>
-                        <li class="footer__list"><a href="#" class="footer__list">Child</a></li>
-                        <li class="footer__list"><a href="#" class="footer__list">Apparel</a></li>
-                        <li class="footer__list"><a href="#" class="footer__list">Brows All</a></li>
-                    </ul>
+
+
+    <section class="subscribe">
+        <div class="subscribe__left">
+            <div class="subscribe__profile"></div>
+            <p class="review__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                purus condimentum a. Aliquam&nbsp;condimentum mattis neque sed pretium”
+            </p>
+            <p class="review__author">Bin Burhan</p>
+            <p class="review__author-full">Dhaka, Bd</p>
+            <div class="pagination">
+                <a href="#" class="pagination__rectangle"></a>
+                <a href="#" class="pagination__rectangle pagination__rectangle_active"></a>
+                <a href="#" class="pagination__rectangle"></a>
+            </div>
+        </div>
+        <div class="subscribe__right">
+            <div class="subscribe__group">
+                <h4 class="subscribe__title">Subscribe</h4>
+                <p class="subscribe__subtitle">FOR OUR NEWLETTER AND&nbsp;PROMOTION</p>
+            </div>
+            <form class="subscribe__form">
+                <input type="email" class="subscribe__input" placeholder="Enter Your Email" required>
+                <button class="subscribe__button" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="brand-group">
+                <a href="#" class="logo"><img class="logo__img" src="./images/logo_1.png" alt="logo">
+                    <p class="logo__text">BRAN<span class="logo__d">D</span></p>
+                </a>
+                <div class="text">
+                    <p class="text__top">Objectively transition extensive data rather than cross functional
+                        solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                        Intrinsicly syndicate an expanded array of&nbsp;processes and cross-unit partnerships.
+                    </p>
+                    <p class="text__bottom">Efficiently plagiarize 24/365 action items and focused infomediaries.
+                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                    </p>
                 </div>
             </div>
-            <div class="footer__bottom">
-                <p class="copy">&#169; 2017 Brand All Rights Reserved.</p>
-                <div class="social">
-                    <a href="#" class="social__links">
-                        <div class="social__links"><i class="fab fa-facebook-f"></i></div>
-                    </a>
-                    <a href="#" class="social__links">
-                        <div class="social__links"><i class="fab fa-twitter"></i></div>
-                    </a>
-                    <a href="#" class="social__links">
-                        <div class="social__links"><i class="fab fa-linkedin-in"></i></div>
-                    </a>
-                    <a href="#" class="social__links">
-                        <div class="social__links"><i class="fab fa-pinterest-p"></i></div>
-                    </a>
-                    <a href="#" class="social__links">
-                        <div class="social__links"><i class="fab fa-google-plus-g"></i></div>
-                    </a>
-                </div>
+            <div class="company-group">
+                <h4 class="company-group__title">Company</h4>
+                <ul class="footer__lists">
+                    <li class="footer__list"><a href="#" class="footer__list">Home</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list">Shop</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list">About</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list">How It Works</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list">Contact</a></li>
+                </ul>
             </div>
-        </footer>
+            <div class="information-group">
+                <h4 class="company-group__title">INFORMATION</h4>
+                <ul class="footer__lists">
+                    <li class="footer__list"><a href="#" class="footer__list">Tearms & Condition</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list">Privacy Policy</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list">How to Buy</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list">How to Sell</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list">Promotion</a></li>
+                </ul>
+            </div>
+            <div class="shop-group">
+                <h4 class="company-group__title">SHOP CATEGORY</h4>
+                <ul class="footer__lists">
+                    <li class="footer__list"><a href="#" class="footer__list">Men</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list">Women</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list">Child</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list">Apparel</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list">Brows All</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="copy">&#169; 2017 Brand All Rights Reserved.</p>
+            <div class="social">
+                <a href="#" class="social__links">
+                    <div class="social__links"><i class="fab fa-facebook-f"></i></div>
+                </a>
+                <a href="#" class="social__links">
+                    <div class="social__links"><i class="fab fa-twitter"></i></div>
+                </a>
+                <a href="#" class="social__links">
+                    <div class="social__links"><i class="fab fa-linkedin-in"></i></div>
+                </a>
+                <a href="#" class="social__links">
+                    <div class="social__links"><i class="fab fa-pinterest-p"></i></div>
+                </a>
+                <a href="#" class="social__links">
+                    <div class="social__links"><i class="fab fa-google-plus-g"></i></div>
+                </a>
+            </div>
+        </div>
+    </footer>
     </div>
 </body>
 

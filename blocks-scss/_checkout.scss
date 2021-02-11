@@ -8,21 +8,22 @@
 }
 
 .checkout__item {
-    border-bottom: 1px solid #e8e8e8;
-    width: 1140px;
+    width: 1141px;
+    display: block;
+    border-bottom: 1px solid  #e8e8e8;
+    padding-top: 30px;
+    padding-bottom: 27px;
 }
 
-.checkout__title {
+.checkout__item__title {
+    cursor: pointer;
+    outline: 0;
     color: #222222;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    padding-bottom: 26px;
-    padding-top: 30px;
-    
-}
 
-.checkout__title_opened {
-    margin-bottom: 39px;
-    padding: 0;
+    &:hover {
+        color: #f16d7f;
+    }
 }
