@@ -1,0 +1,148 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1600px;
+}
+
+.container__header {
+    display: flex;
+    height: 99px;
+    max-width: $siteWidth;
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+}
+
+.header__left {
+    display: flex;
+    height: 51px;
+    align-items: center;
+    margin-left: 216px;
+    margin-top: 25px;
+    margin-bottom: 24px;
+
+}
+
+.header__right {
+    display: flex;
+    height: 38px;
+    margin-top: 31px;
+    align-items: flex-end;
+    margin-left: 343px;
+}
+
+.logo {
+    display: flex;
+    margin-right: 46px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.logo__img {
+    width: 59px;
+    height: 51px;
+    margin-right: 11px;
+}
+
+.logo__text {
+    height: 19px;
+    color: #222222;
+    letter-spacing: 0.68px;
+    font-size: 27px;
+    font-weight: 300;
+}
+
+.logo__d {
+    color: #f16d7f;
+    font-weight: 900;
+    letter-spacing: 0.68px;
+}
+
+.header__form {
+    display: flex;
+    width: 410px;
+    
+}
+
+
+
+
+.browse {
+    max-width: 87px;
+    width: 100%;
+    height: 38px;
+    background-image: url(./images/triangle.png);
+    background-repeat: no-repeat;
+    background-position: 69px;
+    padding: 0;
+    border: 0;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+    text-indent: 15px;
+    letter-spacing: 0.35px;
+    background-color: #f9f9f9;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+
+
+.header__input{
+    max-width: 281px;
+    width: 100%;
+    width: 317px;
+    height: 38px;
+    border: 0;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+
+.header__input::-webkit-input-placeholder {
+    color: #a4a4a4;
+    font-size: 14px;
+    font-weight: 300; 
+}
+
+.header__submit {
+    width: 36px;
+    height: 38px;
+    background-color: #ffffff;
+    background-image: url(./images/search.png);
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: center;
+    border-radius: 0 3px 3px 0;
+    padding: 0;
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.header__submit:hover {
+    opacity: 0.7;
+}
+
+.basket__link {
+    width: 32px;
+    height: 29px;
+    margin-right: 26px;
+    position: relative;
+}
+
+.basket__link:hover .basket {
+    opacity: 0.7;
+}
+
+.basket {
+    width: 32px;
+    height: 29px;
+}
