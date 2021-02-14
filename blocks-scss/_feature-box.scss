@@ -1,0 +1,36 @@
+.feature-box {
+    background-color: #222224;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-box__item {
+    margin-top: 89px;
+    margin-bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 309px;
+    justify-content: center;
+}
+
+.feature-box__img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 23px;
+}
+
+.feature-box__title {
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+.feature-box__text {
+    color: #fbfbfb;
+    line-height: 23.95px;
+    font-size: 14px;
+    font-weight: 300;
+}
