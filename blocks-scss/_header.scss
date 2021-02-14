@@ -1,26 +1,30 @@
+$siteWidthProc: 1600;
+
 .header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
     max-width: 1600px;
 }
 
 .container__header {
     display: flex;
-    height: 99px;
     max-width: $siteWidth;
     width: 100%;
     border-bottom: 1px solid #ececec;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
 }
 
 .header__left {
     display: flex;
     height: 51px;
     align-items: center;
-    margin-left: 216px;
+    margin-left: pxInProc(216, 1600);
     margin-top: 25px;
     margin-bottom: 24px;
-
 }
 
 .header__right {
@@ -28,7 +32,7 @@
     height: 38px;
     margin-top: 31px;
     align-items: flex-end;
-    margin-left: 343px;
+    margin-right: pxInProc(231, 1600);
 }
 
 .logo {
@@ -48,7 +52,7 @@
     height: 19px;
     color: #222222;
     letter-spacing: 0.68px;
-    font-size: 27px;
+    font-size: (27em / 16);
     font-weight: 300;
 }
 
@@ -61,7 +65,6 @@
 .header__form {
     display: flex;
     width: 410px;
-    
 }
 
 
@@ -77,7 +80,7 @@
     padding: 0;
     border: 0;
     color: #222222;
-    font-size: 14px;
+    font-size: (14em /16);
     font-weight: 300;
     text-align: left;
     border-radius: 3px 0 0 3px;
@@ -93,7 +96,7 @@
 
 
 
-.header__input{
+.header__input {
     max-width: 281px;
     width: 100%;
     width: 317px;
@@ -109,8 +112,8 @@
 
 .header__input::-webkit-input-placeholder {
     color: #a4a4a4;
-    font-size: 14px;
-    font-weight: 300; 
+    font-size: (14em / 14);
+    font-weight: 300;
 }
 
 .header__submit {
@@ -148,5 +151,4 @@
 .basket {
     width: 32px;
     height: 29px;
-    
 }

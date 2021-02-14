@@ -2,6 +2,7 @@
     position: absolute;
     top: 145px;
     border-radius: 5px;
+    width: 100%;
     background-color: #ffffff;
     border: 1px solid #e8e8e8;
     display: none;
@@ -12,6 +13,8 @@
     z-index: 2;
     max-height: 345px;
     align-content: space-around;
+    left: auto;
+    right: auto;
     @include transition-prop;
 }
 
@@ -21,7 +24,7 @@
 
 
 .mega-box_accoserise {
-    right: 100px;
+    right: 200px;
 }
 
 .mega-box::before {
@@ -39,11 +42,11 @@
 }
 
 .mega-box_accoserise::before {
-    left: 170px;
+    left: 180px;
 }
 
 .mega-box_feature {
-    right: 140px;
+    right: 220px;
 }
 
 .mega-box_feature::before {
@@ -55,7 +58,7 @@
 }
 
 .mega-box_hot::before {
-    left: 450px;
+    left: 360px;
 }
 
 .mega-item-box {
