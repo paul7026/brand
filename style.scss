@@ -1,5 +1,10 @@
 $siteWidth: 1600px;
 
+@mixin transition-prop {
+    transition: all ease-out 0.3s;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -114,6 +119,12 @@ main {
     height: 542px;
     background-image: url(./images/men.jpg);
     position: relative;
+    @include transition-prop;
+
+    &:hover {
+        transform: scale(1.1) translate(-50px, -50px);
+        box-shadow: #f16d7f 0 0 15px;
+    }
 
 }
 
@@ -124,9 +135,6 @@ main {
     top: 26px;
     position: absolute;
     display: flex;
-
-
-
 }
 
 .category__title {
@@ -169,6 +177,12 @@ main {
     background-color: #dadad2;
     height: 261px;
     margin-top: 20px;
+    @include transition-prop;
+
+    &:hover {
+        transform: scale(1.1) translate(-50px, 50px);
+        box-shadow: #f16d7f 0 0 15px;
+    }
 }
 
 .category__img {
@@ -194,6 +208,12 @@ main {
     height: 261px;
     position: relative;
     margin-bottom: 20px;
+    @include transition-prop;
+
+    &:hover {
+        transform: scale(1.1) translate(50px, -50px);
+        box-shadow: #f16d7f 0 0 15px;
+    }
 }
 
 .category__women-badge {
@@ -209,6 +229,12 @@ main {
     width: 560px;
     height: 542px;
     position: relative;
+    @include transition-prop;
+
+    &:hover {
+        transform: scale(1.1) translate(50px, 50px);
+        box-shadow: #f16d7f 0 0 15px;
+    }
 }
 
 .category__kids-badge {
@@ -258,72 +284,36 @@ main {
 
 .products__link {
     width: 263px;
-
     display: flex;
     flex-direction: column;
     text-decoration: none;
 }
 
 
-.cover {
-    width: 261px;
-    height: 280px;
-    background-color: #3a3838;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    display: none;
-    justify-content: center;
-    box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
-}
-
-.cover__link {
-    width: 125px;
-    height: 41px;
-    margin-top: 98px;
-}
-
-.products__item:hover .cover {
-    display: flex;
-}
-
-.cover__add {
-    width: 123px;
-    height: 39px;
-    border: 1px solid #ffffff;
-    display: flex;
-    align-items: center;
-    margin-top: 98px;
-    text-decoration: none;
-}
-
-.add__title {
-    color: #ffffff;
-    font-size: 13px;
-    margin: 5px 0 7px 8px;
-    font-weight: bold;
-}
-
-.cover__img {
-    width: 23px;
-    height: 22px;
-    margin-left: 12px;
-}
-
 .products__item {
     width: 263px;
     text-decoration: none;
     margin-bottom: 39px;
     position: relative;
+    @include transition-prop;
+
+    &:hover {
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    }
+
+    &:hover .products__img {
+        filter: brightness(50%);
+    }
+
+    &:hover .cover {
+        display: flex;
+    }
 }
 
 .products__item:nth-last-child(-n+4) {
     margin-bottom: 0;
 }
 
-.products__item:hover {
-    box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
-}
 
 .products__img {
     width: 261px;
@@ -352,7 +342,10 @@ main {
     margin-bottom: 21px;
 }
 
+@import "blocks-scss/cover";
+
 .product__browse {
+    box-sizing: border-box;
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
@@ -361,17 +354,28 @@ main {
     background-color: #f16d7f;
     text-indent: 24px;
     text-align: left;
-    border: 0;
-    border: 0;
+    border: 1px solid #f16d7f;
     cursor: pointer;
+    @include transition-prop;
+
+    span {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+        margin-left: 9px;
+    }
+
+    &:hover {
+        background-color: #ffffff;
+        color: #f16d7f;
+
+        span {
+            color: #f16d7f;
+        }
+    }
 }
 
-.product__browse span {
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 400;
-    margin-left: 9px;
-}
+
 
 .product__browse .fas {
     display: inline;
@@ -550,10 +554,11 @@ main {
     height: 4px;
     background-color: #d6d6d6;
     margin-right: 13px;
+    @include transition-prop;
 }
 
 .pagination__rectangle:hover {
-    opacity: 0.7;
+    background-color: #f16d7f;
 }
 
 
@@ -561,9 +566,7 @@ main {
     margin-right: 0;
 }
 
-.pagination__rectangle_active {
-    background-color: #f16d7f;
-}
+
 
 .subscribe__right {
     width: 808px;
@@ -631,6 +634,7 @@ main {
     font-weight: 400;
     color: #ffffff;
     cursor: pointer;
+    @include transition-prop;
 }
 
 .subscribe__button:hover {
@@ -716,6 +720,7 @@ main {
     text-decoration: none;
     letter-spacing: 0.4px;
     display: block;
+    @include transition-prop;
 }
 
 .footer__list:hover {
@@ -771,6 +776,7 @@ main {
     color: #b2b2b2;
     font-size: 16px;
     font-weight: 400;
+    @include transition-prop;
 }
 
 .social__links:last-child {
@@ -918,6 +924,7 @@ main {
     text-indent: 248px;
     text-align: left;
     margin-bottom: 122px;
+    @include transition-prop;
 }
 
 .product-description__submit:hover {
@@ -1002,3 +1009,9 @@ main {
 //shopping-cart.html//
 @import "blocks-scss/shoping-cart";
 @import "blocks-scss/order";
+
+//checkout.html//
+@import "blocks-scss/adress-form";
+@import "blocks-scss/checkout";
+@import "blocks-scss/fieldset-login";
+@import "blocks-scss/fieldset-reg";

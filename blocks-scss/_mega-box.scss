@@ -12,6 +12,7 @@
     z-index: 2;
     max-height: 345px;
     align-content: space-around;
+    @include transition-prop;
 }
 
 .menu__list:hover .mega-box {
@@ -67,6 +68,10 @@
     margin-top: 15px;
     background-image: url(./images/mega-box.jpg);
     position: relative;
+    transition: box-shadow 0.2s ease-out;
+    &:hover {
+        box-shadow: 0 0 10px #f16d7f ;
+    }
 }
 
 .mega-img__title {
@@ -78,7 +83,10 @@
     text-transform: uppercase;
     top: 61px;
     right: 10px;
+
 }
+
+
 
 
 .mega-hading {
@@ -101,6 +109,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 28px;
+    @include transition-prop;
 }
 
 .mega-link:hover {

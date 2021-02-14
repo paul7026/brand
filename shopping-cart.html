@@ -115,8 +115,12 @@
                                 <p class="card__total-left">TOTAL</p>
                                 <p class="card__total-right">$500.00</p>
                             </div>
-                            <button class="card__checkout">Checkout</button>
-                            <button class="card__go">Go to cart</button>
+                            <form class="card__checkout-form" action="checkout.html" target="_blank">
+                                <button class="card__checkout-button">Checkout</button>
+                            </form>
+                            <form class="card__go-form" action="shopping-cart.html" target="_blank">
+                                <button class="card__go-button">Go to cart</button>
+                            </form>
                         </div>
                         <!-- ---------- -->
                     </a>
@@ -515,7 +519,10 @@
         <main>
             <section class="breadcrumb">
                 <h2 class="breadcrumb__title">New Arrivals</h2>
-                <p class="breadcrumb__path">Home / Men /<span>New Arrivals</span></p>
+                <p class="breadcrumb__path"><a class="breadcrumb__path-link" href="#">Home</a>/
+                    <a class="breadcrumb__path-link" href="#">Men</a>/<a class="breadcrumb__path-link breadcrumb__path-link_active" href="#">New
+                        Arrivals</a>
+                </p>
             </section>
 
             <section class="shopping-cart">
@@ -532,7 +539,8 @@
                         <div class="shopping-cart-product__img-box">
                             <img class="shopping-cart-product__img" src="./images/shoping-cart1.jpg" alt="Product">
                             <h4 class="shopping-cart-product__title">Mango People T-shirt</h4>
-                            <p class="shopping-cart-product__prop">Color:&nbsp;&nbsp;<span>Red</span> Size:&nbsp;&nbsp;<span>Xll</span></p>
+                            <p class="shopping-cart-product__prop">Color:&nbsp;&nbsp;<span>Red</span>
+                                Size:&nbsp;&nbsp;<span>Xll</span></p>
                         </div>
                         <p class="shopping-cart-product__price">$150</p>
                         <input class="shopping-cart-product__quantity" type="text" value="2">
@@ -546,7 +554,8 @@
                         <div class="shopping-cart-product__img-box">
                             <img class="shopping-cart-product__img" src="./images/shopping-cart2.jpg" alt="Product">
                             <h4 class="shopping-cart-product__title">Mango People T-shirt</h4>
-                            <p class="shopping-cart-product__prop">Color:&nbsp;&nbsp;<span>Red</span> Size:&nbsp;&nbsp;<span>Xll</span></p>
+                            <p class="shopping-cart-product__prop">Color:&nbsp;&nbsp;<span>Red</span>
+                                Size:&nbsp;&nbsp;<span>Xll</span></p>
                         </div>
                         <p class="shopping-cart-product__price">$150</p>
                         <input class="shopping-cart-product__quantity" type="text" value="2">
@@ -560,7 +569,8 @@
                         <div class="shopping-cart-product__img-box">
                             <img class="shopping-cart-product__img" src="./images/shopiping-cart3.jpg" alt="Product">
                             <h4 class="shopping-cart-product__title">Mango People T-shirt</h4>
-                            <p class="shopping-cart-product__prop">Color:&nbsp;&nbsp;<span>Red</span> Size:&nbsp;&nbsp;<span>Xll</span></p>
+                            <p class="shopping-cart-product__prop">Color:&nbsp;&nbsp;<span>Red</span>
+                                Size:&nbsp;&nbsp;<span>Xll</span></p>
                         </div>
                         <p class="shopping-cart-product__price">$150</p>
                         <input class="shopping-cart-product__quantity" type="text" value="2">

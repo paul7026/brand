@@ -115,8 +115,12 @@
                                 <p class="card__total-left">TOTAL</p>
                                 <p class="card__total-right">$500.00</p>
                             </div>
-                            <button class="card__checkout">Checkout</button>
-                            <button class="card__go">Go to cart</button>
+                            <form class="card__checkout-form" action="checkout.html" target="_blank">
+                                <button class="card__checkout-button">Checkout</button>
+                            </form>
+                            <form class="card__go-form" action="shopping-cart.html" target="_blank">
+                                <button class="card__go-button">Go to cart</button>
+                            </form>
                         </div>
                         <!-- ---------- -->
                     </a>
@@ -515,7 +519,10 @@
         <main>
             <section class="breadcrumb">
                 <h2 class="breadcrumb__title">New Arrivals</h2>
-                <p class="breadcrumb__path">Home / Men /<span>New Arrivals</span></p>
+                <p class="breadcrumb__path"><a class="breadcrumb__path-link" href="#">Home</a>/
+                    <a class="breadcrumb__path-link" href="#">Men</a>/<a class="breadcrumb__path-link breadcrumb__path-link_active" href="#">New
+                        Arrivals</a>
+                </p>
             </section>
 
             <section class="image-slider">
